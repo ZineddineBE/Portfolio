@@ -1,0 +1,304 @@
+.scroll-to-top{
+    display: none;
+}
+
+header img{
+    width: 75px;
+    margin: 5px 0 5px 0;
+}
+
+/* Burger menu */
+
+header nav .nav-links{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-left: -1050px;
+    transition: all 0.5s ease-in-out;
+    background-color: #ffffff56;
+    backdrop-filter: blur(10px);
+    height: 70vh;
+}
+
+header nav .nav-links ul{
+    margin-top: 15px;
+    padding-left: 0;
+    list-style-type: none;    
+}
+
+header nav .nav-links ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+header nav .nav-links ul li a{
+    text-decoration: none;
+    padding: 20px 20px 10px 20px;
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+}
+
+header nav .burger-menu{
+    position: absolute;
+    right: 25px;
+    top: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+header nav .mobile-menu{
+    margin-left: 0;
+}
+
+header .container i{
+    display: none;
+}
+
+/* Main */
+
+main .name h1{
+    font-size: 3.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 1;
+    text-shadow: 1px 1px 2px rgb(116, 116, 116);
+    letter-spacing: 0.3rem;
+}
+
+main .presentation{
+    background-color: #1f1f1f;
+    color: white;
+}
+
+main .presentation span{
+    color: #2e93dc;
+}
+
+main .presentation p{
+    font-size: 1.4rem;
+}
+
+main h2{
+    font-size: 3rem;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 1;
+    text-shadow: 1px 1px 2px rgb(116, 116, 116);
+    letter-spacing: 1rem;
+    margin-top: 25px;
+}
+
+
+main .card img{
+    max-width: 75%;
+}
+
+main .card-body{
+    text-align: center;
+}
+
+/* Footer */
+
+footer p{
+    display: inline;
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+footer img{
+    width: 50px;
+}
+
+footer .fa-square-github{
+    color: #171515;
+}
+
+
+@media (min-width: 992px) {
+
+    header{
+        position: sticky;
+        top: 0;
+        padding: 10px 16px;
+        background: #ffffff;
+        z-index: 999;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    
+    header img:hover {
+        transform: rotate(360deg);
+    }
+
+    header nav .burger-menu{
+        display: none;
+    }
+
+    header nav .nav-links{
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        margin-left: 0;
+        background-color: #ffffff;
+        height: 0;
+    }
+    
+    header nav .nav-links ul{
+        list-style-type: none;
+        padding-left: 0; /* enlever l'espace des puces */
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    header nav .nav-links ul li{
+        display: inline;
+    }
+    
+    header nav .nav-links ul li a{
+        display: inline-block;
+        padding: 20px 15px 10px 15px;
+        margin-top: 5px;
+        text-decoration: none;
+        color: black;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
+    }
+    
+    header nav .nav-links ul li a,
+    header nav ul li a:after,
+    header nav ul li a:before {
+      transition: all .5s;
+    }
+    
+    header nav .nav-links ul li a{
+      position: relative;
+    }
+    
+    nav .nav-links ul li a:hover {
+        color: #9a1915;
+    }
+    
+    header nav .nav-links ul li a:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #aaa;
+      height: 2px;
+    }
+    
+    header nav .nav-links ul li a:hover:after {
+      width: 100%;
+    }
+
+    header nav .nav-links ul li a i .fa-solid{
+        padding-left: 25px;
+        margin-left: 250px;
+    }
+    
+    header .header i{
+        display: inline-block;
+        padding: 0;
+
+    }
+
+    #linkedin i{
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+
+    #github i{
+        margin-top: 40px;
+        margin-left: 40px;
+        transform: translateX(-65px);
+        color: #24292e;
+    }
+
+    .fa-square-github:hover{
+        opacity: 90%;
+    }
+    
+    /* Main */
+
+    main .name h1{
+        font-size: 10rem;
+    }
+
+    main .contact h1{
+        font-size: 6rem;
+    }
+
+    main .presentation{
+        margin: 0 !important;
+        max-width: 100%;
+    }
+    
+    main .presentation p{
+        font-size: 1.9rem;
+    }
+    
+    main h2{
+        font-size: 8rem;
+        margin-top: 125px;
+    }
+
+    main .formations .card img{
+        max-width: 100%;
+    }
+
+    main .competences img{
+        max-width: 100%;
+        width: 150px;
+        height: 200px;
+    }
+    
+    main .exp-pro .card img{
+        max-width: 100%;
+    }
+
+    /* Form */
+
+    .message{
+        height: 250px;
+    }
+    
+    /* Back to the top */
+    
+    .scroll-to-top {
+        opacity: 0;
+        z-index: 999;
+        display: block;
+    }
+
+    .scroll-to-top i{
+        transition: top 0.3s ease-out;
+        position: fixed;
+        float: right;
+        bottom: 7%;
+        right: 2%;
+        color: black;
+        
+    }
+    
+    .scroll-to-top i:hover{
+        opacity: 75%;
+        animation: pulse 1s infinite ease-in-out alternate;
+    }
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to { transform: scale(0.8); }
+    }
+    
+    .show-scroll-to-top{
+        opacity: 1;
+    }
+    
+}
