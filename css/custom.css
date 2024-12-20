@@ -84,6 +84,16 @@ main .presentation p{
     font-size: 1.4rem;
 }
 
+main .cv img{
+    width: 200px;
+}
+
+main .cv p{
+    font-size: 1.3rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.08rem;
+}
+
 main h2{
     font-size: 3rem;
     font-family: "Bebas Neue", sans-serif;
@@ -92,7 +102,6 @@ main h2{
     letter-spacing: 1rem;
     margin-top: 25px;
 }
-
 
 main .card img{
     max-width: 75%;
@@ -118,7 +127,6 @@ footer img{
 footer .fa-square-github{
     color: #171515;
 }
-
 
 @media (min-width: 992px) {
 
@@ -239,6 +247,25 @@ footer .fa-square-github{
     main .presentation p{
         font-size: 1.9rem;
     }
+
+    main .cv img{
+        width: 200px;
+    }
+
+    main .cv img:hover{
+        opacity: 75%;
+        animation: pulse_cv 1.2s infinite ease-in-out alternate;
+    }
+    @keyframes pulse_cv {
+      from { transform: scale(1); }
+      to { transform: scale(0.9); }
+    }
+
+    main .cv p{
+        font-size: 1.3rem;
+        font-family: "Bebas Neue", sans-serif;
+        letter-spacing: 0.08rem;
+    }
     
     main h2{
         font-size: 8rem;
@@ -253,6 +280,12 @@ footer .fa-square-github{
         max-width: 100%;
         width: 150px;
         height: 200px;
+    }
+
+    main .competences p{
+        font-size: 1.8rem;
+        font-family: "Bebas Neue", sans-serif;
+        letter-spacing: 0.05rem;
     }
     
     main .exp-pro .card img{
@@ -279,8 +312,7 @@ footer .fa-square-github{
         float: right;
         bottom: 7%;
         right: 2%;
-        color: black;
-        
+        color: black; 
     }
     
     .scroll-to-top i:hover{
