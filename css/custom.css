@@ -198,27 +198,22 @@ footer .fa-square-github{
     header nav .nav-links ul li a:hover:after {
       width: 100%;
     }
-
-    header nav .nav-links ul li a i .fa-solid{
-        padding-left: 25px;
-        margin-left: 250px;
-    }
     
     header .header i{
         display: inline-block;
-        padding: 0;
+    }
 
+    #linkedin, #github{
+        width: 45px;
+        transform: translateX(135px);
     }
 
     #linkedin i{
         margin-top: 40px;
-        margin-left: 40px;
     }
 
     #github i{
         margin-top: 40px;
-        margin-left: 40px;
-        transform: translateX(-65px);
         color: #24292e;
     }
 
