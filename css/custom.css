@@ -103,12 +103,37 @@ main h2{
     margin-top: 25px;
 }
 
-main .card img{
+main .card{
     max-width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+main .card .LLVM{
+    width: 200px;
+}
+
+main .card .IUT{
+    width: 250px;
 }
 
 main .card-body{
     text-align: center;
+}
+
+main .projets p, main .competences p{
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.008rem;
+    font-size: 1.3rem;
+}
+
+main .projets img{
+    max-width: 75%;
+    border-radius: 10px;
+}
+
+main .coming_soon{
+    width: 250px;
 }
 
 /* Footer */
@@ -141,7 +166,8 @@ footer .fa-square-github{
     
     header img:hover {
         transform: rotate(360deg);
-    }
+        transition: all 1s ease-in-out 0s;
+      }
 
     header nav .burger-menu{
         display: none;
@@ -269,11 +295,30 @@ footer .fa-square-github{
     
     main h2{
         font-size: 8rem;
-        margin-top: 125px;
+    }
+
+    #formations, #projets, #competences{
+        scroll-margin-top: 125px;
     }
 
     main .formations .card img{
         max-width: 100%;
+    }
+
+    main .projets img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    main .projets .coming_soon{
+        width: 60%;
+    }
+
+    main .projets p{
+        width: 100%;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem;
     }
 
     main .competences img{
