@@ -67,32 +67,32 @@
             </div>
         </div>
 
-        <form class="container mt-3">
+        <form class="container mt-3" method="post" action="contact.php">
             <div class="row">
 
                 <div class="col-12 col-lg-6 mb-3">
                     <label for="name" class="form-label">Prénom</label>
-                    <input type="text" class="form-control" id="name">
+                    <input type="text" class="form-control" id="name" name="name" required>
                 </div>
                 <div class="col-12 col-lg-6 mb-3">
                     <label for="lastName" class="form-label">Nom</label>
-                    <input type="text" class="form-control" id="lastName">
+                    <input type="text" class="form-control" id="lastName" name="lastName" required>
                 </div>
                 
             </div>
 
             <div class="col-12 mb-3">
-                <label for="email" class="form-label">Adresse mail</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <label for="mail" class="form-label">Adresse mail</label>
+                <input type="email" class="form-control" id="mail" placeholder="name@example.com" name="mail" required>
             </div>
 
             <div class="col-12 mb-4">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control message" placeholder="Votre message" required></textarea>
+                <textarea class="form-control message" placeholder="Votre message" name="message" required></textarea>
             </div>
             
             <div class="col-auto d-flex justify-content-end">
-                <button type="submit" class="btn btn-primary mb-3" disabled>Envoyer</button>
+                <button type="submit" name="submit" class="btn btn-primary mb-3">Envoyer</button>
             </div>
         </form>
 
