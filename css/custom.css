@@ -227,6 +227,14 @@ footer .fa-square-github{
     nav .nav-links ul li a:hover {
         color: #9a1915;
     }
+
+    nav .nav-links .active {
+        color: #9a1915;
+    }
+
+    nav .nav-links .active i{
+        display: none;
+    }
     
     header nav .nav-links ul li a:after {
       position: absolute;

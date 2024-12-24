@@ -46,7 +46,23 @@ var links = document.querySelectorAll('a');
 
 for( var i=links.length; i--; ) {
     links[i].addEventListener("click", function(){
-    // close your menu here
     navLinks.classList.remove("mobile-menu");    
     });
 };
+
+
+// Add class "active" of nav-item when one is selected
+const navMenu = document.getElementById('nav-links');
+const navItems = document.querySelectorAll('.nav-item');
+
+for(var i = 0; i < navItems.length; i++){
+    navItems[i].addEventListener("click", function(){
+        var current = document.querySelector(".active")
+
+        if(current){
+          current.classList.remove('active')
+        }
+        this.classList.add('active')
+    })
+}
+
