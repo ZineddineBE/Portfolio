@@ -22,7 +22,7 @@ header nav .nav-links{
     transition: all 0.5s ease-in-out;
     background-color: #ffffff56;
     backdrop-filter: blur(10px);
-    height: 100%;
+    height: 100vh;
 }
 
 header nav .nav-links ul{
@@ -63,7 +63,7 @@ header .container i{
 
 /* Main */
 
-main .name h1{
+main h1{
     font-size: 3.5rem;
     font-family: "Bebas Neue", sans-serif;
     line-height: 1;
