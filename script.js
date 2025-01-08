@@ -1,3 +1,5 @@
+AOS.init();
+
 var scrollToTopButton = document.getElementById("scrollToTopButton");
 var linkArrow = document.getElementById("link-arrow");
 var presentation = document.getElementById("top");
