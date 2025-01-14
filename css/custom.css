@@ -1,3 +1,7 @@
+body{
+    overflow-x:hidden;
+}
+
 .scroll-to-top{
     display: none;
 }
@@ -23,6 +27,7 @@ header nav .nav-links{
     background-color: #ffffff56;
     backdrop-filter: blur(10px);
     height: 100vh;
+    z-index: 100;
 }
 
 header nav .nav-links ul{
@@ -144,8 +149,12 @@ main .coming_soon{
     width: 250px;
 }
 
-#formations, #projets, #competences, #exp-pro{
+#formations, #projets, #competences, #exp-pro, #contact{
     scroll-margin-top: 25px;
+}
+
+.contact-lien .justify-content{
+    text-align: justify;
 }
 
 /* Footer */
@@ -166,6 +175,10 @@ footer .fa-square-github{
 }
 
 @media (min-width: 992px) {
+
+    body{
+        overflow-x:hidden;
+    }
 
     header{
         position: sticky;
@@ -289,10 +302,6 @@ footer .fa-square-github{
         font-size: 10rem;
     }
 
-    main .contact h1{
-        font-size: 6rem;
-    }
-
     main .presentation{
         margin: 0 !important;
         max-width: 100%;
@@ -372,6 +381,14 @@ footer .fa-square-github{
     main .card{
         max-width: 100%;
     }
+
+    main .contact i{
+        color: black;
+    }
+
+    .contact-lien .justify-content{
+        text-align: justify;
+    }  
 
     /* Form */
 
