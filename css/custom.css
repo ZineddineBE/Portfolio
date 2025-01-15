@@ -141,8 +141,9 @@ main .projets p, main .competences p{
 }
 
 main .projets img{
-    max-width: 75%;
     border-radius: 10px;
+    width: 350px;
+    max-width: 100%;
 }
 
 main .coming_soon{
@@ -151,6 +152,7 @@ main .coming_soon{
 
 main .competences svg {
     width: 75%;
+    max-width: 100%;
 }
 
 #formations, #projets, #competences, #exp-pro, #contact{
@@ -358,6 +360,26 @@ footer .fa-square-github{
     main .projets img{
         width: 100%;
         border-radius: 10px;
+    }
+
+    main .projets img:hover{
+        animation: pulse_projets 3s infinite;
+    }
+    @keyframes pulse_projets {
+        0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+        }
+    
+        70% {
+            transform: scale(1);
+            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+        }
+    
+        100% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
     }
 
     main .projets .coming_soon{
