@@ -149,8 +149,16 @@ main .coming_soon{
     width: 250px;
 }
 
+main .competences svg {
+    width: 75%;
+}
+
 #formations, #projets, #competences, #exp-pro, #contact{
     scroll-margin-top: 25px;
+}
+
+#contact-photo {
+    width : 150px;
 }
 
 /* Footer */
