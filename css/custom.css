@@ -158,8 +158,13 @@ main .competences svg {
 }
 
 #contact-photo {
-    width : 150px;
+    display: none;
 }
+
+#contact-photo-mobile{
+    width: 175px;
+}
+
 
 /* Footer */
 
@@ -388,6 +393,11 @@ footer .fa-square-github{
 
     #contact-photo {
         width : 160px;
+        display: block;
+    }
+
+    #contact-photo-mobile{
+        display: none;
     }
 
     /* Form */
