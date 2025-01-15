@@ -153,10 +153,6 @@ main .coming_soon{
     scroll-margin-top: 25px;
 }
 
-.contact-lien .justify-content{
-    text-align: justify;
-}
-
 /* Footer */
 
 footer p{
@@ -382,13 +378,9 @@ footer .fa-square-github{
         max-width: 100%;
     }
 
-    main .contact i{
-        color: black;
+    #contact-photo {
+        width : 160px;
     }
-
-    .contact-lien .justify-content{
-        text-align: justify;
-    }  
 
     /* Form */
 
