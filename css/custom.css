@@ -26,7 +26,7 @@ header nav .nav-links{
     transition: all 0.5s ease-in-out;
     background-color: #ffffff56;
     backdrop-filter: blur(10px);
-    height: 100vh;
+    height: 50%;
     z-index: 100;
 }
 
@@ -165,6 +165,20 @@ main .competences svg {
 
 #contact-photo-mobile{
     width: 175px;
+}
+
+#mobile-mail, #mobile-phone {
+    z-index: 999;
+    display: block;
+}
+
+.mobile-contact i{
+    transition: top 0.3s ease-out;
+    position: fixed;
+    float: right;
+    bottom: 7%;
+    right: 2%;
+    color: black; 
 }
 
 
@@ -431,7 +445,6 @@ footer .fa-square-github{
     /* Back to the top */
     
     .scroll-to-top {
-        opacity: 0;
         z-index: 999;
         display: block;
     }
@@ -456,6 +469,10 @@ footer .fa-square-github{
     
     .show-scroll-to-top{
         opacity: 1;
+    }
+
+    .mobile-mail, .mobile-phone {
+        display: none;
     }
     
 }
