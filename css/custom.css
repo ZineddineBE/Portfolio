@@ -186,7 +186,7 @@ footer .fa-square-github{
 }
 
 
-@media (min-width: 1198px) {
+@media (min-width: 992px) {
 
     body{
         overflow-x:hidden;

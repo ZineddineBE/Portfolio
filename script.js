@@ -1,4 +1,9 @@
-AOS.init({disable: 'mobile'});
+AOS.init({
+  disable: function() {
+    var maxWidth = 992;
+    return window.innerWidth < maxWidth;
+  }
+});
 
 var scrollToTopButton = document.getElementById("scrollToTopButton");
 var linkArrow = document.getElementById("link-arrow");
