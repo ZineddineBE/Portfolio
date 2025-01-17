@@ -1,4 +1,4 @@
-AOS.init();
+AOS.init({disable: 'mobile'});
 
 var scrollToTopButton = document.getElementById("scrollToTopButton");
 var linkArrow = document.getElementById("link-arrow");

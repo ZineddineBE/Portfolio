@@ -91,6 +91,7 @@ main .presentation p{
 
 main .socials i{
     zoom: 300%;
+    display: block;
 }
 
 #github i{
@@ -167,21 +168,6 @@ main .competences svg {
     width: 175px;
 }
 
-#mobile-mail, #mobile-phone {
-    z-index: 999;
-    display: block;
-}
-
-.mobile-contact i{
-    transition: top 0.3s ease-out;
-    position: fixed;
-    float: right;
-    bottom: 7%;
-    right: 2%;
-    color: black; 
-}
-
-
 /* Footer */
 
 footer p{
@@ -199,7 +185,8 @@ footer .fa-square-github{
     color: #171515;
 }
 
-@media (min-width: 992px) {
+
+@media (min-width: 1198px) {
 
     body{
         overflow-x:hidden;
@@ -469,10 +456,6 @@ footer .fa-square-github{
     
     .show-scroll-to-top{
         opacity: 1;
-    }
-
-    .mobile-mail, .mobile-phone {
-        display: none;
     }
     
 }
