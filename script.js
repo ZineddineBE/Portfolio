@@ -7,29 +7,33 @@ AOS.init({
 
 var scrollToTopButton = document.getElementById("scrollToTopButton");
 var linkArrow = document.getElementById("link-arrow");
-var presentation = document.getElementById("top");
 
-// Add a scroll event listener
-window.addEventListener("scroll", function() {
-    // If user has scrolled down more than 100px, show the button
-    if(document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+// Fonction pour gérer le défilement
+function handleScroll() {
+    // Vérifie si on a défilé de plus de 150px
+    if (document.documentElement.scrollTop >= 150) {
         scrollToTopButton.classList.add("show-scroll-to-top");
-    }
-     else {
+    } else {
         scrollToTopButton.classList.remove("show-scroll-to-top");
-        linkArrow.classList.add('disabled');
     }
-});
+}
+
+// Ajoute l'écouteur d'événement pour le défilement
+window.addEventListener("scroll", handleScroll);
+
+// Exécuter immédiatement pour l'état initial
+handleScroll();
 
 // Add a click event listener to scroll back to the top
 scrollToTopButton.addEventListener("click", function(e) {
     e.preventDefault();
-    // Scroll to the top smoothly
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
 });
+
+var presentation = document.getElementById("top");
 
 presentation.addEventListener("click", function(f) {
     f.preventDefault();
@@ -39,7 +43,6 @@ presentation.addEventListener("click", function(f) {
         behavior: "smooth"
     });
 });
-
 
 // Burger menu
 const menuHamburger = document.querySelector(".burger-menu")

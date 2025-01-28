@@ -2,8 +2,10 @@ body{
     overflow-x:hidden;
 }
 
-.scroll-to-top{
+.scroll-to-top {
     display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
 }
 
 header img{
@@ -431,28 +433,32 @@ footer .fa-square-github{
     
     .scroll-to-top {
         z-index: 999;
-        display: block;
-    }
-
-    .scroll-to-top i{
-        transition: top 0.3s ease-out;
         position: fixed;
-        float: right;
         bottom: 7%;
         right: 2%;
-        color: black; 
     }
-    
-    .scroll-to-top i:hover{
+
+    .scroll-to-top i {
+        color: black;
+        transition: transform 0.3s ease-out;
+    }
+
+    .scroll-to-top i:hover {
         opacity: 75%;
         animation: pulse 1s infinite ease-in-out alternate;
     }
+
     @keyframes pulse {
-      from { transform: scale(1); }
-      to { transform: scale(0.8); }
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(0.8);
+        }
     }
-    
-    .show-scroll-to-top{
+
+    .show-scroll-to-top {
+        display: block;
         opacity: 1;
     }
     
