@@ -367,7 +367,7 @@ footer .fa-square-github{
         border-radius: 10px;
     }
 
-    #hackaton:hover, #crud_project:hover{
+    #hackaton:hover, #crud_project:hover, #todolist:hover{
         animation: pulse_projets 3s infinite;
     }
     @keyframes pulse_projets {
