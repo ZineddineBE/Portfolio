@@ -28,7 +28,7 @@ header nav .nav-links{
     transition: all 0.5s ease-in-out;
     background-color: #ffffff56;
     backdrop-filter: blur(10px);
-    height: 50%;
+    height: 360px;
     z-index: 100;
 }
 
@@ -58,6 +58,13 @@ header nav .burger-menu{
     top: 35px;
     width: 35px;
     cursor: pointer;
+    transition: opacity 0.15s ease-in-out;
+    opacity: 1;
+    z-index: 1;
+}
+
+header nav .burger-menu.fade {
+    opacity: 0;
 }
 
 header nav .mobile-menu{
@@ -462,4 +469,38 @@ footer .fa-square-github{
         opacity: 1;
     }
     
+}
+
+@media (min-width: 992px) and (max-width: 1250px){
+
+    header{
+        margin: 0px;
+    }
+
+    header nav .nav-links ul li a{
+        font-size: 1.35rem;
+    }
+
+    header nav .nav-links ul li a{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #linkedin, #github{
+        width: 45px;
+        transform: translateX(70px);
+    }
+
+    main .name h1{
+        font-size: 7.5rem;
+    }
+
+    main .presentation p{
+        font-size: 1.45rem;
+    }
+
+    main h2{
+        font-size: 6rem;
+    }
+
 }
