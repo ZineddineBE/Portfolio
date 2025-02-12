@@ -27,7 +27,7 @@ header nav .nav-links{
     margin-left: -1050px;
     transition: all 0.5s ease-in-out;
     background-color: #ffffff56;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(40px);
     height: 360px;
     z-index: 100;
 }
@@ -98,6 +98,21 @@ main .presentation p{
     font-size: 1.4rem;
 }
 
+#stage{
+    border: 2px solid #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 7px 0 #9a1915, 0 0 5px 2px #c02924, inset 0 0 7px 0 #9a1915, inset 0 0 5px 1px #c02924;
+}
+
+#stage h2{
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+}
+
+#stage p{
+    font-size: 1.25rem;
+}
+
 main .socials i{
     zoom: 300%;
     display: block;
@@ -151,7 +166,6 @@ main .projets p, main .competences p{
 }
 
 main .projets img{
-    /* border: 2px solid #303030; */
     border-radius: 10px;
     width: 350px;
     max-width: 100%;
@@ -168,6 +182,12 @@ main .competences svg {
 
 #formations, #projets, #competences, #exp-pro, #contact{
     scroll-margin-top: 25px;
+}
+
+.contact-info{
+    border: 2px solid #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 7px 0 #9a1915, 0 0 5px 2px #c02924, inset 0 0 7px 0 #9a1915, inset 0 0 5px 1px #c02924;
 }
 
 #contact-photo {
@@ -280,7 +300,7 @@ footer .fa-square-github{
       width: 0%;
       content: '.';
       color: transparent;
-      background: #aaa;
+      background: #707070;
       height: 2px;
     }
     
@@ -330,7 +350,7 @@ footer .fa-square-github{
     }
     
     main .presentation p{
-        font-size: 1.9rem;
+        font-size: 1.6rem;
     }
 
     main .socials, hr{
