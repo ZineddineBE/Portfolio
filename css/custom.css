@@ -159,20 +159,23 @@ main .card-body{
     text-align: center;
 }
 
-main .projets p, main .competences p{
+main .competences p{
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 0.008rem;
     font-size: 1.3rem;
 }
 
 main .projets img{
-    border-radius: 10px;
-    width: 350px;
     max-width: 100%;
 }
 
+.disabled-link {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
 main .coming_soon{
-    width: 250px;
+    width: 10px;
 }
 
 main .competences svg {
@@ -384,15 +387,6 @@ footer .fa-square-github{
         scroll-margin-top: 125px;
     }
 
-    main .formations .card img{
-        max-width: 100%;
-    }
-
-    main .projets img{
-        width: 500px;
-        height: 200px;
-        border-radius: 10px;
-    }
 
     #hackaton:hover, #crud_project:hover, #todolist:hover{
         animation: pulse_projets 3s infinite;
@@ -414,11 +408,13 @@ footer .fa-square-github{
         }
     }
 
+    main .projets img{
+        border-radius: 5px;
+        width: auto;
+    }
+
     main .projets p{
-        width: 100%;
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 1.5rem;
-        letter-spacing: 0.05rem;
+        font-size: 1.3rem;
     }
 
     main .competences img{

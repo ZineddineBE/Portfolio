@@ -95,11 +95,3 @@ for(var i = 0; i < navItems.length; i++){
         this.classList.add('active')
     })
 }
-
-const navBar = document.querySelector("mobile-menu");
-
-// Récupérer le style calculé
-const navBarStyle = window.getComputedStyle(navBar);
-
-console.log("Hauteur CSS de la navbar :", navBarStyle.height);
-console.log("Largeur CSS de la navbar :", navBarStyle.width);
